@@ -2,9 +2,31 @@
 
 Run `npm install` for express.js, then `node index.js` to start the express server.
 
-Run `pip install fastapi` for FastAPI, then run `fastapi dev main.py` to start the FastAPI dev server.
+Run `pip install fastapi requests` for FastAPI, then run `fastapi dev main.py` to start the FastAPI dev server.
 
 
+## If pip install failed on MacOS
+
+Because MacOS has built-in python for the system working, and we don't want to pollute it so we will use `pyenv` to do that.
+
+First `brew install pyenv` ( Assume you already installed brew on your Mac)
+
+Then install the current stable version of python3
+
+`pyenv install 3.12`
+
+Then set it to global python
+
+`pyenv global 3.12`
+
+Then confirm those steps are correct by `pyenv versions`, terminal should output something like this.
+
+```
+  system
+* 3.12.3 (set by /Users/tony/.pyenv/version)
+```
+
+Then you should able to run `pip install fastapi requests` without errors.
 
 ## FastAPI to Express.js
 
